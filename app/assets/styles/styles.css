@@ -1,0 +1,12 @@
+@import 'normalize.css';
+
+body
+{
+    color: navy;
+}
+
+a, a:active
+{
+    text-decoration: none;
+    color: inherit;
+}
