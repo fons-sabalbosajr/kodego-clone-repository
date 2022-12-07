@@ -1,15 +1,4 @@
 @import 'normalize.css';
 @import './modules/_container';
 @import './base/_global';
-
-
-
-.nav li{
-    display: inline-block;
-    margin-right: 1.5em;
-}
-
-.user-links
-{
-    float: right;
-}
+@import './modules/_header';
