@@ -1,0 +1,16 @@
+.btn
+{
+    //border: 1px solid rgb(116, 81, 17);
+    //border: 1px solid #A3CB38;
+    padding: 1.25rem 1rem;
+    display: inline-block;
+    border-radius: 2.5px;
+    color: $mainGreen;
+   
+   
+    &--primary
+    {
+        background-color: $mainGreen;
+        color: white;
+    }
+}
