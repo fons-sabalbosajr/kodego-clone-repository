@@ -13,4 +13,9 @@
         background-color: $mainGreen;
         color: white;
     }
+
+    &--wide{
+        margin-top: 3rem;
+        padding: 1.25rem 8rem;
+    }
 }
