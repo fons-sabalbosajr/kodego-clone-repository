@@ -1,5 +1,5 @@
 .container{
-    width: 100%;
+    width: 85%;
     margin:auto;
     box-shadow: 0px 10px 20px lightgray;
     //border: 1px solid black;
@@ -8,6 +8,11 @@
     &--padded
     {
         padding: 1.25rem;
+    }
+
+    &--wide
+    {
+        width: 90%;
     }
 }
 
