@@ -39,6 +39,7 @@
 
     &__image{
         width: 100%;
+        align-content: center;
 
         @mixin atLaptopLarge{
             width: 50%;
