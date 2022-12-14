@@ -15,6 +15,7 @@
     }
 
     &__mobile-nav-trigger{
+    z-index: 10;
     position: absolute;
     top: 2.5rem;
     right: 1.75rem;
@@ -23,6 +24,7 @@
     background-color: $mainBlue;
 
     &::before{
+        z-index: 10;
         position: relative;
         content: "";
         display: block;
@@ -33,6 +35,7 @@
     }
 
     &::after{
+        z-index: 10;
         position: relative;
         content: "";
         display: block;
@@ -55,7 +58,40 @@
     }
 
     &__nav{
-        display: none;
+        //display: none;
+        //z-index: 6;
+        border: 1px solid black;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: white;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding: 5rem 2.5rem 2.5rem 5rem;
+
+        &::before{
+            z-index: -1;
+            position: absolute;
+            content: "";
+            display: block;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgb(0, 0, 0, 0.4);
+            height: 100vh;
+            width: 100vw;
+            margin-left: -50%;
+        }
+
+        & li{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-bottom: 1.2em;
+        }
 
         @mixin atLaptopLarge{
             display: flex;
@@ -72,15 +108,14 @@
         }
     }
 
-    /*&__logo-container{
-        @mixin atBigScreen{
-            height: 100%;
-            margin-right: auto;
-            display: flex;
-        }
-    }*/
-
     &__user-links{
+        padding: 0.5em;
+        border-bottom: 1px solid rgb(214, 214, 214, 0.8);
+
+        & > a:first-of-type{
+            margin-right: 1em;
+        }
+
         @mixin atLaptop{
             & > a
             {
